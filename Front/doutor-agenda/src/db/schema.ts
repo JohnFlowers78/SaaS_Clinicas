@@ -14,7 +14,7 @@ export const usersTable = pgTable("users", {
 });
 
 export const usersTableRelations = relations(usersTable, ({ many }) => ({
-  usersToClinics: many(usersToClinicsTable),
+  usersToClinics: many(usersToClinicsTable), // esses são os usúarios que farão gestão do sistema !
 }));
 
 export const usersToClinicsTable = pgTable("users_to_clinics", {
